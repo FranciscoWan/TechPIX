@@ -1,0 +1,101 @@
+.benefits {
+  padding-block: var(--section-padding);
+  background: var(--color-surface);
+}
+
+.benefits__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.benefits__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  margin-bottom: clamp(48px, 8vw, 80px);
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.benefits__card {
+  position: relative;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: border-color var(--transition-base), transform var(--transition-base);
+  transform-style: preserve-3d;
+}
+
+.benefits__card:hover {
+  border-color: var(--color-border-hover);
+}
+
+.benefits__card--featured {
+  background: var(--gradient-card);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.benefits__card--featured:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: var(--glow-blue-sm);
+}
+
+.benefits__card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-light);
+}
+
+.benefits__card-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.benefits__card-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.benefits__card-badge {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  padding: 3px 10px;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+@media (max-width: 1024px) {
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+}

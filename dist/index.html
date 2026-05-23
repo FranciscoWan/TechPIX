@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="TechPIX — Pagamentos PIX instantâneos para empresas. Integre PIX na sua plataforma em minutos com a API mais rápida do Brasil." />
+  <meta property="og:title" content="TechPIX — Pagamentos PIX para empresas" />
+  <meta property="og:description"
+    content="Integre PIX na sua plataforma em minutos. Zero taxa de adesão, suporte 24/7." />
+  <title>TechPIX</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- QRCode.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script type="module" crossorigin src="./assets/index-Dl1vj0lx.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CTUTpoWn.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__logo" aria-label="TechPIX - Página inicial">
+        <span class="navbar__logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad-nav)" />
+            <!-- Losango PIX -->
+            <path d="M16 5L27 16L16 27L5 16Z" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)"
+              stroke-width="1" />
+            <!-- Cifrão -->
+            <text x="16" y="21" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700"
+              fill="white">$</text>
+            <defs>
+              <linearGradient id="logo-grad-nav" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1d4ed8" />
+                <stop offset="1" stop-color="#10b981" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="navbar__logo-text">TechPIX</span>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Menu principal">
+        <ul class="navbar__links">
+          <li><a href="#how-it-works" class="navbar__link">Como funciona</a></li>
+          <li><a href="#benefits" class="navbar__link">Benefícios</a></li>
+          <li><a href="#stats" class="navbar__link">Números</a></li>
+          <li><a href="#pricing" class="navbar__link">Preços</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#pricing" class="navbar__btn-outline">Entrar</a>
+        <a href="#pricing" class="navbar__btn-primary">Começar grátis</a>
+      </div>
+
+      <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navbar__mobile-menu" aria-hidden="true">
+      <ul class="navbar__mobile-links">
+        <li><a href="#how-it-works" class="navbar__mobile-link">Como funciona</a></li>
+        <li><a href="#benefits" class="navbar__mobile-link">Benefícios</a></li>
+        <li><a href="#stats" class="navbar__mobile-link">Números</a></li>
+        <li><a href="#pricing" class="navbar__mobile-link">Preços</a></li>
+        <li><a href="#pricing" class="navbar__btn-primary navbar__btn-primary--mobile">Começar grátis</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero__bg-glow" aria-hidden="true"></div>
+      <div class="hero__particles" aria-hidden="true" id="heroParticles"></div>
+
+      <div class="hero__container">
+        <div class="hero__content">
+          <span class="section-label hero__label" data-animate>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <circle cx="6" cy="6" r="6" fill="#10b981" />
+              <circle cx="6" cy="6" r="3" fill="white" />
+            </svg>
+            Novo: Taxa zero até R$50k/mês
+          </span>
+
+          <h1 class="hero__title display-1" data-animate>
+            Pagamentos PIX<br />
+            <span class="gradient-text">instantâneos</span><br />
+            para empresas
+          </h1>
+
+          <p class="hero__description body-lg" data-animate>
+            Integre PIX na sua plataforma em minutos. API simples, webhooks em tempo real e dashboard completo para
+            escalar seus pagamentos.
+          </p>
+
+          <div class="hero__actions" data-animate>
+            <a href="#pricing" class="btn btn--primary btn--lg">
+              Começar grátis
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#how-it-works" class="btn btn--ghost btn--lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polygon points="10 8 16 12 10 16 10 8" />
+              </svg>
+              Ver como funciona
+            </a>
+          </div>
+
+          <div class="hero__social-proof" data-animate>
+            <div class="hero__avatars">
+              <span class="hero__avatar hero__avatar--1">AB</span>
+              <span class="hero__avatar hero__avatar--2">CD</span>
+              <span class="hero__avatar hero__avatar--3">EF</span>
+              <span class="hero__avatar hero__avatar--4">GH</span>
+            </div>
+            <p class="hero__social-text">
+              <strong>+2.400 empresas</strong> já usam TechPIX
+            </p>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-animate>
+          <div class="hero__mockup" id="heroMockup">
+            <div class="hero__mockup-header">
+              <div class="hero__mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="hero__mockup-title">Dashboard TechPIX</span>
+            </div>
+
+            <div class="hero__mockup-body">
+              <div class="hero__balance-card">
+                <span class="hero__balance-label">Saldo disponível</span>
+                <span class="hero__balance-value" id="heroBalance">R$ 84.320,00</span>
+                <span class="hero__balance-change">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M18 15l-6-6-6 6" />
+                  </svg>
+                  +12,4% esse mês
+                </span>
+              </div>
+
+              <div class="hero__chart" aria-label="Gráfico de transações">
+                <canvas id="heroChart" width="300" height="80"></canvas>
+              </div>
+
+              <div class="hero__transactions">
+                <div class="hero__tx hero__tx--in">
+                  <div class="hero__tx-icon hero__tx-icon--in">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M12 19V5M5 12l7-7 7 7" />
+                    </svg>
+                  </div>
+                  <div class="hero__tx-info">
+                    <span class="hero__tx-name">Loja Online</span>
+                    <span class="hero__tx-time">Agora mesmo</span>
+                  </div>
+                  <span class="hero__tx-amount hero__tx-amount--in">+R$ 1.250,00</span>
+                </div>
+                <div class="hero__tx hero__tx--out">
+                  <div class="hero__tx-icon hero__tx-icon--out">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M12 5v14M19 12l-7 7-7-7" />
+                    </svg>
+                  </div>
+                  <div class="hero__tx-info">
+                    <span class="hero__tx-name">Fornecedor XYZ</span>
+                    <span class="hero__tx-time">2 min atrás</span>
+                  </div>
+                  <span class="hero__tx-amount hero__tx-amount--out">-R$ 340,00</span>
+                </div>
+                <div class="hero__tx hero__tx--in">
+                  <div class="hero__tx-icon hero__tx-icon--in">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M12 19V5M5 12l7-7 7 7" />
+                    </svg>
+                  </div>
+                  <div class="hero__tx-info">
+                    <span class="hero__tx-name">Marketplace</span>
+                    <span class="hero__tx-time">5 min atrás</span>
+                  </div>
+                  <span class="hero__tx-amount hero__tx-amount--in">+R$ 4.890,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notificações flutuantes -->
+          <div class="hero__notification hero__notification--1" id="heroNotif1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+              aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <span>PIX recebido</span>
+            <strong>+R$ 2.450</strong>
+          </div>
+          <div class="hero__notification hero__notification--2" id="heroNotif2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"
+              aria-hidden="true">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            <span>Transação</span>
+            <strong>0.3s</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="how-it-works__container">
+        <div class="how-it-works__header">
+          <span class="section-label" data-animate>Como funciona</span>
+          <h2 class="section-title" data-animate>
+            Integre em <span class="gradient-text">3 passos</span>
+          </h2>
+          <p class="section-description" data-animate>
+            Da criação da conta ao primeiro pagamento em menos de 10 minutos. Nossa API foi feita para desenvolvedores.
+          </p>
+        </div>
+
+        <div class="how-it-works__steps">
+          <div class="how-it-works__line" aria-hidden="true">
+            <svg viewBox="0 0 100 400" preserveAspectRatio="none" aria-hidden="true">
+              <path id="howItWorksPath" d="M50 0 C50 100 50 200 50 400" stroke="url(#line-gradient)" stroke-width="2"
+                fill="none" stroke-dasharray="400" stroke-dashoffset="400" />
+              <defs>
+                <linearGradient id="line-gradient" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                  <stop stop-color="#2563eb" />
+                  <stop offset="1" stop-color="#10b981" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <article class="how-it-works__step" data-animate data-step="1">
+            <div class="how-it-works__step-number" aria-hidden="true">01</div>
+            <div class="how-it-works__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" />
+                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+              </svg>
+            </div>
+            <div class="how-it-works__step-content">
+              <h3 class="how-it-works__step-title">Crie sua conta</h3>
+              <p class="how-it-works__step-desc">Cadastro 100% online. Documentação simples, aprovação em até 2 horas
+                úteis. Sem burocracia.</p>
+            </div>
+          </article>
+
+          <article class="how-it-works__step" data-animate data-step="2">
+            <div class="how-it-works__step-number" aria-hidden="true">02</div>
+            <div class="how-it-works__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div class="how-it-works__step-content">
+              <h3 class="how-it-works__step-title">Integre a API</h3>
+              <p class="how-it-works__step-desc">SDKs para Node, Python, PHP e Go. Documentação completa com exemplos
+                reais e sandbox de testes.</p>
+            </div>
+          </article>
+
+          <article class="how-it-works__step" data-animate data-step="3">
+            <div class="how-it-works__step-number" aria-hidden="true">03</div>
+            <div class="how-it-works__step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+              </svg>
+            </div>
+            <div class="how-it-works__step-content">
+              <h3 class="how-it-works__step-title">Comece a receber</h3>
+              <p class="how-it-works__step-desc">Pagamentos PIX em tempo real. Notificações via webhook, relatórios
+                automáticos e saque D+0.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="how-it-works__code" data-animate>
+          <div class="how-it-works__code-header">
+            <div class="how-it-works__code-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="how-it-works__code-lang">JavaScript</span>
+          </div>
+          <pre class="how-it-works__code-body"><code><span class="code-comment">// Criar cobrança PIX em 3 linhas</span>
+<span class="code-keyword">const</span> techpix = <span class="code-keyword">new</span> <span class="code-class">TechPIX</span>(<span class="code-string">'sk_live_...'</span>)
+
+<span class="code-keyword">const</span> pix = <span class="code-keyword">await</span> techpix.charges.<span class="code-fn">create</span>({
+  amount: <span class="code-number">1000</span>, <span class="code-comment">// R$ 10,00</span>
+  description: <span class="code-string">'Pedido #1234'</span>,
+  expiresIn: <span class="code-number">3600</span>
+})
+
+console.<span class="code-fn">log</span>(pix.qrCode) <span class="code-comment">// QR Code pronto!</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="dashboard">
+      <div class="dashboard__container">
+        <div class="dashboard__header">
+          <span class="section-label" data-animate>Dashboard</span>
+          <h2 class="section-title" data-animate>
+            Visibilidade <span class="gradient-text">total</span> dos seus pagamentos
+          </h2>
+          <p class="section-description" data-animate>
+            Acompanhe cada transação em tempo real. Gráficos, filtros avançados e exportação para seu ERP.
+          </p>
+        </div>
+
+        <div class="dashboard__preview" data-animate>
+          <div class="dashboard__window">
+            <div class="dashboard__window-bar">
+              <div class="dashboard__window-dots"><span></span><span></span><span></span></div>
+              <div class="dashboard__window-url">app.techpix.com/dashboard</div>
+            </div>
+            <div class="dashboard__window-body">
+              <div class="dashboard__kpis">
+                <div class="dashboard__kpi">
+                  <span class="dashboard__kpi-label">Receita hoje</span>
+                  <span class="dashboard__kpi-value" data-count="48320">R$ 0</span>
+                  <span class="dashboard__kpi-badge dashboard__kpi-badge--up">+8,2%</span>
+                </div>
+                <div class="dashboard__kpi">
+                  <span class="dashboard__kpi-label">Transações</span>
+                  <span class="dashboard__kpi-value" data-count="1847">0</span>
+                  <span class="dashboard__kpi-badge dashboard__kpi-badge--up">+15,3%</span>
+                </div>
+                <div class="dashboard__kpi">
+                  <span class="dashboard__kpi-label">Ticket médio</span>
+                  <span class="dashboard__kpi-value" data-count="261">R$ 0</span>
+                  <span class="dashboard__kpi-badge dashboard__kpi-badge--down">-2,1%</span>
+                </div>
+                <div class="dashboard__kpi">
+                  <span class="dashboard__kpi-label">Taxa aprovação</span>
+                  <span class="dashboard__kpi-value" data-count="99">0%</span>
+                  <span class="dashboard__kpi-badge dashboard__kpi-badge--up">+0,3%</span>
+                </div>
+              </div>
+
+              <div class="dashboard__chart-area">
+                <canvas id="dashboardChart" height="120" aria-label="Gráfico de receita semanal"></canvas>
+              </div>
+
+              <div class="dashboard__table">
+                <div class="dashboard__table-header">
+                  <span>Transação</span>
+                  <span>Valor</span>
+                  <span>Status</span>
+                  <span>Horário</span>
+                </div>
+                <div class="dashboard__table-row">
+                  <span>PIX - João Silva</span>
+                  <span>R$ 450,00</span>
+                  <span class="dashboard__status dashboard__status--ok">Aprovado</span>
+                  <span>14:32</span>
+                </div>
+                <div class="dashboard__table-row">
+                  <span>PIX - Maria Santos</span>
+                  <span>R$ 1.200,00</span>
+                  <span class="dashboard__status dashboard__status--ok">Aprovado</span>
+                  <span>14:28</span>
+                </div>
+                <div class="dashboard__table-row">
+                  <span>PIX - Carlos Mendes</span>
+                  <span>R$ 89,90</span>
+                  <span class="dashboard__status dashboard__status--pending">Pendente</span>
+                  <span>14:25</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="benefits" class="benefits">
+      <div class="benefits__container">
+        <div class="benefits__header">
+          <span class="section-label" data-animate>Benefícios</span>
+          <h2 class="section-title" data-animate>
+            Tudo que sua empresa<br /><span class="gradient-text">precisa e mais</span>
+          </h2>
+        </div>
+
+        <div class="benefits__grid" data-stagger>
+          <article class="benefits__card" data-animate>
+            <div class="benefits__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3 class="benefits__card-title">Velocidade máxima</h3>
+            <p class="benefits__card-desc">Pagamentos confirmados em menos de 300ms. Infraestrutura dedicada com 99,99%
+              de uptime.</p>
+          </article>
+
+          <article class="benefits__card" data-animate>
+            <div class="benefits__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0110 0v4" />
+              </svg>
+            </div>
+            <h3 class="benefits__card-title">Segurança enterprise</h3>
+            <p class="benefits__card-desc">Criptografia end-to-end, autenticação 2FA e monitoramento antifraude com IA
+              em tempo real.</p>
+          </article>
+
+          <article class="benefits__card" data-animate>
+            <div class="benefits__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+              </svg>
+            </div>
+            <h3 class="benefits__card-title">Melhores taxas</h3>
+            <p class="benefits__card-desc">0% de taxa nos primeiros R$50k mensais. A partir daí, apenas 0,4% por
+              transação. Sem surpresas.</p>
+          </article>
+
+          <article class="benefits__card" data-animate>
+            <div class="benefits__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3 class="benefits__card-title">API developer-first</h3>
+            <p class="benefits__card-desc">SDKs em 6 linguagens, documentação interativa, sandbox completo e suporte
+              técnico via Slack.</p>
+          </article>
+
+          <article class="benefits__card" data-animate>
+            <div class="benefits__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3 class="benefits__card-title">Dashboard completo</h3>
+            <p class="benefits__card-desc">Relatórios em tempo real, exportação CSV/PDF, conciliação automática e
+              alertas personalizados.</p>
+          </article>
+
+          <article class="benefits__card benefits__card--featured" data-animate>
+            <div class="benefits__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.18 19.79 19.79 0 01.18 .53 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </div>
+            <h3 class="benefits__card-title">Suporte 24/7</h3>
+            <p class="benefits__card-desc">Time dedicado por chat, e-mail e telefone. SLA de resposta em até 2 horas
+              para issues críticos.</p>
+            <span class="benefits__card-badge">Mais amado</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS / PARCEIROS -->
+    <section id="logos" class="logos">
+      <div class="logos__container">
+        <p class="logos__label" data-animate>Confiado por empresas líderes</p>
+        <div class="logos__track-wrapper">
+          <div class="logos__track" aria-label="Parceiros TechPIX">
+            <div class="logos__inner" aria-hidden="true">
+              <span class="logos__item">Mercado Livre</span>
+              <span class="logos__item">iFood</span>
+              <span class="logos__item">Nubank</span>
+              <span class="logos__item">Magazine Luiza</span>
+              <span class="logos__item">Shopify BR</span>
+              <span class="logos__item">Itaú</span>
+              <span class="logos__item">Americanas</span>
+              <span class="logos__item">Lojas Renner</span>
+              <span class="logos__item">Mercado Livre</span>
+              <span class="logos__item">iFood</span>
+              <span class="logos__item">Nubank</span>
+              <span class="logos__item">Magazine Luiza</span>
+              <span class="logos__item">Shopify BR</span>
+              <span class="logos__item">Itaú</span>
+              <span class="logos__item">Americanas</span>
+              <span class="logos__item">Lojas Renner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULAÇÃO QR CODE -->
+    <section id="qr-simulation" class="qr-simulation">
+      <div class="qr-simulation__container">
+        <div class="qr-simulation__content">
+          <span class="section-label" data-animate>Experimente</span>
+          <h2 class="section-title" data-animate>
+            Gere um QR Code<br /><span class="gradient-text">em segundos</span>
+          </h2>
+          <p class="section-description" data-animate>
+            Simule uma cobrança PIX real. Digite um valor e veja o QR Code sendo gerado instantaneamente.
+          </p>
+
+          <div class="qr-simulation__form" data-animate>
+            <div class="qr-simulation__input-group">
+              <label for="qrAmount" class="qr-simulation__label">Valor da cobrança</label>
+              <div class="qr-simulation__input-wrapper">
+                <span class="qr-simulation__prefix">R$</span>
+                <input type="number" id="qrAmount" class="qr-simulation__input" placeholder="0,00" min="0.01"
+                  step="0.01" value="50" aria-label="Valor da cobrança em reais" />
+              </div>
+            </div>
+            <div class="qr-simulation__input-group">
+              <label for="qrDescription" class="qr-simulation__label">Descrição</label>
+              <input type="text" id="qrDescription" class="qr-simulation__input qr-simulation__input--text"
+                placeholder="Pedido #1234" maxlength="60" value="Pedido #1234" aria-label="Descrição da cobrança" />
+            </div>
+          </div>
+
+          <div class="qr-simulation__status" id="qrStatus" data-animate>
+            <div class="qr-simulation__status-dot"></div>
+            <span>Aguardando pagamento...</span>
+          </div>
+
+          <div class="qr-simulation__timer" id="qrTimer" data-animate>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            Expira em <strong id="qrCountdown">05:00</strong>
+          </div>
+        </div>
+
+        <div class="qr-simulation__qr-wrapper" data-animate>
+          <div class="qr-simulation__qr-card" id="qrCard">
+            <div class="qr-simulation__qr-header">
+              <span class="qr-simulation__qr-brand">TechPIX</span>
+              <span class="qr-simulation__qr-amount" id="qrDisplayAmount">R$ 50,00</span>
+            </div>
+            <div class="qr-simulation__qr-code" id="qrCodeContainer"></div>
+            <p class="qr-simulation__qr-instruction">Abra seu banco e escaneie o código</p>
+            <button class="btn btn--primary" id="qrPayBtn" type="button">Simular pagamento</button>
+          </div>
+          <div class="qr-simulation__success" id="qrSuccess" aria-live="polite" aria-hidden="true">
+            <div class="qr-simulation__success-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <h3>Pagamento confirmado!</h3>
+            <p>PIX recebido com sucesso em <strong>0.28s</strong></p>
+            <button class="btn btn--outline" id="qrResetBtn" type="button">Nova cobrança</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+    <section id="stats" class="stats">
+      <div class="stats__container">
+        <div class="stats__header">
+          <span class="section-label" data-animate>Números reais</span>
+          <h2 class="section-title" data-animate>
+            A fintech PIX que<br /><span class="gradient-text">mais cresce no Brasil</span>
+          </h2>
+        </div>
+
+        <div class="stats__grid" data-stagger>
+          <div class="stats__card" data-animate>
+            <span class="stats__value" data-count="12400000" data-prefix="R$" data-suffix="">R$ 0</span>
+            <span class="stats__label">Processados hoje</span>
+            <span class="stats__sublabel">+18% vs. ontem</span>
+          </div>
+          <div class="stats__card" data-animate>
+            <span class="stats__value" data-count="2400" data-suffix="+">0+</span>
+            <span class="stats__label">Empresas ativas</span>
+            <span class="stats__sublabel">Em 27 estados</span>
+          </div>
+          <div class="stats__card" data-animate>
+            <span class="stats__value" data-count="99.99" data-suffix="%" data-decimal="true">0%</span>
+            <span class="stats__label">Uptime garantido</span>
+            <span class="stats__sublabel">SLA contratual</span>
+          </div>
+          <div class="stats__card" data-animate>
+            <span class="stats__value" data-count="300" data-suffix="ms">&lt;0ms</span>
+            <span class="stats__label">Tempo médio</span>
+            <span class="stats__sublabel">Por transação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGURANÇA -->
+    <section id="security" class="security">
+      <canvas class="security__canvas" id="securityCanvas" aria-hidden="true"></canvas>
+      <div class="security__container">
+        <div class="security__content">
+          <span class="section-label" data-animate>Segurança</span>
+          <h2 class="section-title" data-animate>
+            Proteção <span class="gradient-text">enterprise</span><br />em cada transação
+          </h2>
+          <p class="section-description" data-animate>
+            Conformidade total com o BACEN e as normas do PIX. Seus dados e os dos seus clientes estão sempre
+            protegidos.
+          </p>
+
+          <ul class="security__list" data-stagger>
+            <li class="security__item" data-animate>
+              <div class="security__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="security__item-title">Certificação PCI DSS Nível 1</h3>
+                <p class="security__item-desc">O mais alto padrão de segurança para processamento de pagamentos.</p>
+              </div>
+            </li>
+            <li class="security__item" data-animate>
+              <div class="security__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0110 0v4" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="security__item-title">Criptografia AES-256</h3>
+                <p class="security__item-desc">Todos os dados em trânsito e em repouso são criptografados.</p>
+              </div>
+            </li>
+            <li class="security__item" data-animate>
+              <div class="security__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="security__item-title">Antifraude com IA</h3>
+                <p class="security__item-desc">Machine learning analisa cada transação em tempo real para detectar
+                  fraudes.</p>
+              </div>
+            </li>
+            <li class="security__item" data-animate>
+              <div class="security__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                  aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="security__item-title">Monitoramento 24/7</h3>
+                <p class="security__item-desc">Equipe de segurança dedicada monitorando a infraestrutura continuamente.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="security__visual" data-animate>
+          <div class="security__shield">
+            <svg width="120" height="140" viewBox="0 0 120 140" fill="none" aria-hidden="true">
+              <path d="M60 4L8 24V64C8 93.5 30.5 120.7 60 132C89.5 120.7 112 93.5 112 64V24L60 4Z"
+                fill="url(#shield-gradient)" stroke="rgba(37,99,235,0.4)" stroke-width="1" />
+              <path d="M60 20L20 36V64C20 86.5 37.5 107 60 116C82.5 107 100 86.5 100 64V36L60 20Z"
+                fill="rgba(37,99,235,0.1)" stroke="rgba(37,99,235,0.3)" stroke-width="1" />
+              <path d="M42 68l12 12 24-24" stroke="#10b981" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <defs>
+                <linearGradient id="shield-gradient" x1="60" y1="4" x2="60" y2="132" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="rgba(37,99,235,0.3)" />
+                  <stop offset="1" stop-color="rgba(16,185,129,0.2)" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="security__badges">
+            <div class="security__badge" data-animate>
+              <span class="security__badge-icon">🏛️</span>
+              <span>Regulado pelo BACEN</span>
+            </div>
+            <div class="security__badge" data-animate>
+              <span class="security__badge-icon">🔒</span>
+              <span>ISO 27001</span>
+            </div>
+            <div class="security__badge" data-animate>
+              <span class="security__badge-icon">✅</span>
+              <span>SOC 2 Type II</span>
+            </div>
+            <div class="security__badge" data-animate>
+              <span class="security__badge-icon">🛡️</span>
+              <span>LGPD Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="testimonials" class="testimonials">
+      <div class="testimonials__container">
+        <div class="testimonials__header">
+          <span class="section-label" data-animate>Depoimentos</span>
+          <h2 class="section-title" data-animate>
+            O que nossos clientes<br /><span class="gradient-text">estão dizendo</span>
+          </h2>
+        </div>
+
+        <div class="testimonials__track-outer">
+          <div class="testimonials__track" id="testimonialsTrack">
+            <article class="testimonials__card">
+              <div class="testimonials__stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote class="testimonials__quote">
+                "Integramos o TechPIX em 2 horas. A API é a mais simples que já usei. Nossas conversões subiram 34%
+                depois que adicionamos PIX como opção de pagamento."
+              </blockquote>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">RS</div>
+                <div class="testimonials__author-info">
+                  <strong>Rafael Souza</strong>
+                  <span>CTO, E-commerce Veloz</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="testimonials__stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote class="testimonials__quote">
+                "O suporte deles é incrível. Tivemos uma dúvida às 2h da manhã e responderam em 8 minutos. Dashboard
+                muito mais completo que os concorrentes."
+              </blockquote>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">AC</div>
+                <div class="testimonials__author-info">
+                  <strong>Ana Costa</strong>
+                  <span>CEO, Plataforma SaaS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="testimonials__stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote class="testimonials__quote">
+                "Processamos mais de R$2 milhões por mês pelo TechPIX. Jamais tivemos downtime ou problemas de
+                segurança. A confiabilidade é impressionante."
+              </blockquote>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">PM</div>
+                <div class="testimonials__author-info">
+                  <strong>Pedro Machado</strong>
+                  <span>Founder, Fintech Startup</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="testimonials__stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote class="testimonials__quote">
+                "A taxa zero nos primeiros R$50k foi decisiva pra escolhermos o TechPIX no início. Hoje crescemos muito
+                e continuamos com eles pela qualidade."
+              </blockquote>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">LF</div>
+                <div class="testimonials__author-info">
+                  <strong>Luana Ferreira</strong>
+                  <span>Diretora Financeira, Varejo Online</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonials__card">
+              <div class="testimonials__stars" aria-label="5 estrelas">★★★★★</div>
+              <blockquote class="testimonials__quote">
+                "Webhooks em tempo real mudaram nosso processo. Confirmação instantânea sem precisar fazer polling.
+                Reduzimos nossa latência em 90%."
+              </blockquote>
+              <div class="testimonials__author">
+                <div class="testimonials__avatar">MR</div>
+                <div class="testimonials__author-info">
+                  <strong>Marcos Ribeiro</strong>
+                  <span>Lead Developer, App de Delivery</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="testimonials__controls" aria-label="Controles do carrossel">
+          <button class="testimonials__btn" id="testimonialsPrev" aria-label="Depoimento anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <div class="testimonials__dots" id="testimonialsDots" aria-label="Indicadores de slide"></div>
+          <button class="testimonials__btn" id="testimonialsNext" aria-label="Próximo depoimento">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="pricing">
+      <div class="pricing__container">
+        <div class="pricing__header">
+          <span class="section-label" data-animate>Preços</span>
+          <h2 class="section-title" data-animate>
+            Simples, transparente<br /><span class="gradient-text">sem surpresas</span>
+          </h2>
+          <p class="section-description" data-animate>
+            Comece grátis e escale conforme seu negócio cresce. Sem custos de setup ou multa por cancelamento.
+          </p>
+        </div>
+
+        <div class="pricing__grid" data-stagger>
+          <article class="pricing__card" data-animate>
+            <div class="pricing__card-header">
+              <span class="pricing__plan-name">Starter</span>
+              <div class="pricing__price">
+                <span class="pricing__price-value">Grátis</span>
+                <span class="pricing__price-period">até R$50k/mês</span>
+              </div>
+              <p class="pricing__plan-desc">Para startups e negócios em crescimento.</p>
+            </div>
+            <ul class="pricing__features">
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Taxa 0% até R$50k/mês
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                API completa + webhooks
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Dashboard básico
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Suporte por e-mail
+              </li>
+              <li class="pricing__feature pricing__feature--muted">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"
+                  aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+                Relatórios avançados
+              </li>
+              <li class="pricing__feature pricing__feature--muted">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"
+                  aria-hidden="true">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+                Suporte prioritário
+              </li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--full">Começar grátis</a>
+          </article>
+
+          <article class="pricing__card pricing__card--featured" data-animate>
+            <span class="pricing__popular-badge">Mais popular</span>
+            <div class="pricing__card-header">
+              <span class="pricing__plan-name">Business</span>
+              <div class="pricing__price">
+                <span class="pricing__price-value">0,4%</span>
+                <span class="pricing__price-period">por transação</span>
+              </div>
+              <p class="pricing__plan-desc">Para empresas com alto volume de transações.</p>
+            </div>
+            <ul class="pricing__features">
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Taxa 0,4% sem limite
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                API completa + webhooks
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Dashboard avançado
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Relatórios completos
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Suporte prioritário 24/7
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Conciliação automática
+              </li>
+            </ul>
+            <a href="#" class="btn btn--primary btn--full">Começar agora</a>
+          </article>
+
+          <article class="pricing__card" data-animate>
+            <div class="pricing__card-header">
+              <span class="pricing__plan-name">Enterprise</span>
+              <div class="pricing__price">
+                <span class="pricing__price-value">Custom</span>
+                <span class="pricing__price-period">sob consulta</span>
+              </div>
+              <p class="pricing__plan-desc">Para grandes volumes e necessidades específicas.</p>
+            </div>
+            <ul class="pricing__features">
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Taxa negociada
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Infraestrutura dedicada
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                SLA customizado
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Gerente dedicado
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Integrações customizadas
+              </li>
+              <li class="pricing__feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Onboarding presencial
+              </li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--full">Falar com vendas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="final-cta" class="final-cta">
+      <div class="final-cta__bg" aria-hidden="true"></div>
+      <div class="final-cta__container">
+        <div class="final-cta__content" data-animate>
+          <span class="section-label">Comece hoje</span>
+          <h2 class="final-cta__title">
+            Pronto para aceitar<br />
+            <span class="gradient-text">PIX do jeito certo?</span>
+          </h2>
+          <p class="final-cta__desc">
+            Junte-se a mais de 2.400 empresas que processam pagamentos com TechPIX. Setup em minutos, taxa zero para
+            começar.
+          </p>
+          <div class="final-cta__actions">
+            <a href="#pricing" class="btn btn--primary btn--xl">
+              Criar conta grátis
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#" class="btn btn--ghost btn--xl">Falar com especialista</a>
+          </div>
+          <p class="final-cta__note">Sem cartão de crédito. Sem burocracia. Cancelamento a qualquer momento.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="navbar__logo" aria-label="TechPIX">
+            <span class="navbar__logo-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect width="32" height="32" rx="8" fill="url(#logo-gradient-footer)" />
+                <path d="M8 16L14 10L20 16L14 22L8 16Z" fill="white" opacity="0.9" />
+                <path d="M14 10L20 16L26 10L20 4L14 10Z" fill="white" opacity="0.5" />
+                <defs>
+                  <linearGradient id="logo-gradient-footer" x1="0" y1="0" x2="32" y2="32"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2563eb" />
+                    <stop offset="1" stop-color="#10b981" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="navbar__logo-text">TechPIX</span>
+          </a>
+          <p class="footer__brand-desc">
+            A plataforma de pagamentos PIX mais moderna do Brasil. API simples, taxas transparentes e suporte real.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer__nav" aria-label="Links do rodapé">
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-title">Produto</h4>
+            <ul>
+              <li><a href="#how-it-works" class="footer__nav-link">Como funciona</a></li>
+              <li><a href="#dashboard" class="footer__nav-link">Dashboard</a></li>
+              <li><a href="#pricing" class="footer__nav-link">Preços</a></li>
+              <li><a href="#" class="footer__nav-link">API Docs</a></li>
+              <li><a href="#" class="footer__nav-link">Status</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-title">Empresa</h4>
+            <ul>
+              <li><a href="#" class="footer__nav-link">Sobre nós</a></li>
+              <li><a href="#" class="footer__nav-link">Blog</a></li>
+              <li><a href="#" class="footer__nav-link">Carreiras</a></li>
+              <li><a href="#" class="footer__nav-link">Imprensa</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-title">Suporte</h4>
+            <ul>
+              <li><a href="#" class="footer__nav-link">Central de ajuda</a></li>
+              <li><a href="#" class="footer__nav-link">Contato</a></li>
+              <li><a href="#" class="footer__nav-link">Comunidade</a></li>
+              <li><a href="#" class="footer__nav-link">Termos de uso</a></li>
+              <li><a href="#" class="footer__nav-link">Privacidade</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 TechPIX. Todos os direitos reservados.</p>
+        <p class="footer__regulated">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          Regulado pelo Banco Central do Brasil
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

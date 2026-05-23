@@ -1,0 +1,75 @@
+:root {
+  /* Colors */
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+  --color-accent: #10b981;
+  --color-accent-light: #34d399;
+  --color-accent-dark: #059669;
+  --color-bg: #0a0a0f;
+  --color-surface: #111118;
+  --color-surface-2: #16161f;
+  --color-surface-3: #1c1c28;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-hover: rgba(255, 255, 255, 0.12);
+  --color-text: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-muted: #64748b;
+  --color-white: #ffffff;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #2563eb, #10b981);
+  --gradient-hero: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(37, 99, 235, 0.3), transparent);
+  --gradient-card: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(16, 185, 129, 0.04));
+
+  /* Glows */
+  --glow-blue: 0 0 40px rgba(37, 99, 235, 0.4);
+  --glow-blue-sm: 0 0 20px rgba(37, 99, 235, 0.3);
+  --glow-green: 0 0 40px rgba(16, 185, 129, 0.4);
+  --glow-green-sm: 0 0 20px rgba(16, 185, 129, 0.3);
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-elevated: 0 8px 48px rgba(0, 0, 0, 0.6);
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-card: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Section padding */
+  --section-padding: clamp(80px, 12vw, 160px);
+
+  /* Transitions */
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+
+  /* Z-index */
+  --z-navbar: 100;
+  --z-modal: 200;
+  --z-tooltip: 300;
+
+  /* Container */
+  --container-max: 1200px;
+  --container-padding: clamp(16px, 5vw, 48px);
+}

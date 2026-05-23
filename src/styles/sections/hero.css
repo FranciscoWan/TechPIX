@@ -1,0 +1,334 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.hero__bg-glow {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero);
+  pointer-events: none;
+}
+
+.hero__particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: calc(var(--section-padding)/2) var(--container-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.hero__label {
+  align-self: flex-start;
+}
+
+.hero__title {
+  color: var(--color-text);
+}
+
+.hero__description {
+  color: var(--color-text-secondary);
+  max-width: 480px;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hero__social-proof {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-2);
+}
+
+.hero__avatars {
+  display: flex;
+}
+
+.hero__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-left: -10px;
+}
+
+.hero__avatar:first-child {
+  margin-left: 0;
+}
+
+.hero__avatar--1 { background: #2563eb; }
+.hero__avatar--2 { background: #10b981; }
+.hero__avatar--3 { background: #7c3aed; }
+.hero__avatar--4 { background: #f59e0b; }
+
+.hero__social-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.hero__social-text strong {
+  color: var(--color-text);
+}
+
+/* Mockup */
+.hero__visual {
+  position: relative;
+}
+
+.hero__mockup {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-elevated);
+}
+
+.hero__mockup-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero__mockup-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.hero__mockup-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background: var(--color-border-hover);
+}
+
+.hero__mockup-dots span:nth-child(1) { background: #ef4444; }
+.hero__mockup-dots span:nth-child(2) { background: #f59e0b; }
+.hero__mockup-dots span:nth-child(3) { background: #22c55e; }
+
+.hero__mockup-title {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.hero__mockup-body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hero__balance-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.hero__balance-label {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.hero__balance-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.hero__balance-change {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+}
+
+.hero__chart {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.hero__transactions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.hero__tx {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-sm);
+}
+
+.hero__tx-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hero__tx-icon--in {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--color-accent);
+}
+
+.hero__tx-icon--out {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.hero__tx-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero__tx-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.hero__tx-time {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+.hero__tx-amount {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.hero__tx-amount--in { color: var(--color-accent); }
+.hero__tx-amount--out { color: #ef4444; }
+
+/* Notificações flutuantes */
+.hero__notification {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  color: var(--color-text);
+  box-shadow: var(--shadow-elevated);
+  white-space: nowrap;
+}
+
+.hero__notification strong {
+  color: var(--color-accent);
+}
+
+.hero__notification--1 {
+  top: -16px;
+  right: -16px;
+}
+
+.hero__notification--2 {
+  bottom: 48px;
+  left: -32px;
+}
+
+.hero__notification--2 strong {
+  color: var(--color-primary-light);
+}
+
+/* Scroll indicator */
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--color-muted), transparent);
+  animation: scrollLine 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+.hero__scroll-indicator span {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+@media (max-width: 1024px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+  }
+
+  .hero__visual {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__notification--2 {
+    display: none;
+  }
+}
