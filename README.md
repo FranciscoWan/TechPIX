@@ -36,4 +36,5 @@ O projeto está disponível online através do link fixado na descrição deste 
 ## Preview
 
 ```md
-/assets/preview.png
+<img width="1222" height="944" alt="preview" src="https://github.com/user-attachments/assets/4677708a-ddc2-430b-9112-c6ca7315e1f7" />
+
